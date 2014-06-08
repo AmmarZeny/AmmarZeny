@@ -1,0 +1,24 @@
+@(tasks: List[Task], taskForm: Form[Task])
+
+@import helper._
+
+@main("Todo list") {
+    
+  
+    
+    <h1>Solve Second degree Eqution... </h1>
+    
+    @form(routes.Application.solve()) {
+   
+        @inputText(taskForm("d1")) <h1>X<sup>2</sup></h1>
+         
+          @inputText(taskForm("d2")) <h1>x</h1>
+        
+             @inputText(taskForm("d3"))
+        
+        
+        <input type="submit" value="Solve It"/>
+        
+    }
+    
+}
